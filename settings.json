@@ -1,0 +1,1477 @@
+{
+    "version": "2026.03",
+    "lastUpdated": "2026-03-05",
+    "categories": [
+        {
+            "id": "user-access",
+            "name": "User Access & Licensing",
+            "icon": "👤",
+            "description": "Control who can access Microsoft 365 Copilot and licensing configuration",
+            "adminCenter": "Microsoft 365 Admin Center",
+            "settings": [
+                {
+                    "id": "ua-license-assignment",
+                    "name": "Copilot License Assignment",
+                    "description": "Assign Microsoft 365 Copilot add-on licenses to individual users or security groups. Requires qualifying base license (E3, E5, Business Standard, Business Premium, A3, A5).",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Billing > Licenses > Microsoft 365 Copilot",
+                    "impact": "high",
+                    "tags": [
+                        "licensing",
+                        "deployment",
+                        "prerequisite"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2026-01-15",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-update-channel",
+                    "name": "Update Channel Configuration",
+                    "description": "Ensure Microsoft 365 Apps are on Current Channel or Monthly Enterprise Channel (version 2511+) for Copilot compatibility. Required prerequisite.",
+                    "type": "select",
+                    "defaultValue": "current",
+                    "recommendedValue": "current",
+                    "options": [
+                        "current",
+                        "monthly-enterprise",
+                        "semi-annual"
+                    ],
+                    "adminPath": "Settings > Org settings > Microsoft 365 installation options",
+                    "impact": "high",
+                    "tags": [
+                        "deployment",
+                        "prerequisite",
+                        "updates"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/deployoffice/overview-update-channels",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-copilot-frontier",
+                    "name": "Copilot Frontier Access",
+                    "description": "Allow users to access experimental and preview Copilot features through the Frontier Program. Includes early access to Agent Mode, App Builder, and new AI models.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": false,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Copilot Frontier",
+                    "impact": "medium",
+                    "tags": [
+                        "preview",
+                        "experimental",
+                        "frontier"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/microsoft-365-copilot-frontier",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-edge-copilot",
+                    "name": "Copilot in Microsoft Edge",
+                    "description": "Control availability of Copilot sidebar in Microsoft Edge browser for licensed users.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Copilot in Edge",
+                    "impact": "low",
+                    "tags": [
+                        "edge",
+                        "browser",
+                        "user-experience"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/manage-copilot-edge",
+                    "addedDate": "2024-03-01",
+                    "lastModifiedDate": "2025-09-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-copilot-chat-pin",
+                    "name": "Pin Copilot Chat in M365 Apps",
+                    "description": "Control whether Copilot Chat is pinned in the navigation bar of Microsoft 365 applications for easy access.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Copilot Chat pinning",
+                    "impact": "low",
+                    "tags": [
+                        "user-experience",
+                        "copilot-chat",
+                        "navigation"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-chat",
+                    "addedDate": "2025-01-01",
+                    "lastModifiedDate": "2026-01-15",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-admin-copilot",
+                    "name": "Copilot in Admin Centers",
+                    "description": "Allow administrators to use Copilot within Microsoft 365, Exchange, SharePoint, and Teams admin centers to query administrative data based on their role.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Admin center Copilot",
+                    "impact": "medium",
+                    "tags": [
+                        "admin",
+                        "productivity",
+                        "admin-center"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365/admin/copilot-admin",
+                    "addedDate": "2025-03-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ua-copilot-dashboard",
+                    "name": "Copilot Dashboard (Viva Insights)",
+                    "description": "Enable the Copilot Dashboard powered by Viva Insights. Set minimum group size for generating organizational insights on Copilot adoption.",
+                    "type": "select",
+                    "defaultValue": "enabled-25",
+                    "recommendedValue": "enabled-10",
+                    "options": [
+                        "disabled",
+                        "enabled-10",
+                        "enabled-25",
+                        "enabled-50"
+                    ],
+                    "adminPath": "Copilot > Dashboard > Minimum group size",
+                    "impact": "medium",
+                    "tags": [
+                        "analytics",
+                        "viva-insights",
+                        "adoption"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "data-privacy",
+            "name": "Data Access & Privacy",
+            "icon": "🔒",
+            "description": "Control how Copilot processes data and privacy settings for your organization",
+            "adminCenter": "Microsoft 365 Admin Center",
+            "settings": [
+                {
+                    "id": "dp-web-search",
+                    "name": "Web Search in Copilot",
+                    "description": "Allow Copilot to use web search to ground responses with real-time internet data. Can be managed tenant-wide or per user group via Cloud Policy.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Web search",
+                    "impact": "high",
+                    "tags": [
+                        "privacy",
+                        "web-search",
+                        "data-access"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/manage-public-web-access",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-connected-experiences",
+                    "name": "Optional Connected Experiences",
+                    "description": "Control optional connected experiences in Microsoft 365 Apps. Disabling this limits certain Copilot features including web search and third-party integrations.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Settings > Org settings > Services > Office cloud policy",
+                    "impact": "high",
+                    "tags": [
+                        "privacy",
+                        "connected-experiences",
+                        "prerequisite"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/deployoffice/privacy/manage-privacy-controls",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-06-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-user-memory",
+                    "name": "Copilot Memory & Personalization",
+                    "description": "Allow Copilot to remember user preferences and context across sessions. Users can view, manage, and delete memories from their personalization settings.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Memory & Personalization",
+                    "impact": "medium",
+                    "tags": [
+                        "privacy",
+                        "personalization",
+                        "memory",
+                        "user-control"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-memory",
+                    "addedDate": "2025-09-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-model-training-optout",
+                    "name": "Opt-out of Model Training",
+                    "description": "Microsoft 365 Copilot does not use customer data to train foundation LLMs. This setting confirms the opt-out status for text and voice data.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Data processing",
+                    "impact": "high",
+                    "tags": [
+                        "privacy",
+                        "model-training",
+                        "data-processing"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/microsoft-365-copilot-privacy",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-content-filtering",
+                    "name": "Content Filtering",
+                    "description": "Control content filtering for blocking harmful, offensive, or inappropriate content in Copilot responses. Uses Azure AI Content Safety.",
+                    "type": "select",
+                    "defaultValue": "standard",
+                    "recommendedValue": "strict",
+                    "options": [
+                        "standard",
+                        "strict",
+                        "custom"
+                    ],
+                    "adminPath": "Copilot > Settings > Content safety",
+                    "impact": "high",
+                    "tags": [
+                        "safety",
+                        "content-filtering",
+                        "responsible-ai"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/azure/ai-services/content-safety/overview",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-chat-history-retention",
+                    "name": "Copilot Chat History Retention",
+                    "description": "Set retention policies for Copilot Chat interaction data. Supports compliance requirements through Microsoft Purview retention policies.",
+                    "type": "select",
+                    "defaultValue": "90-days",
+                    "recommendedValue": "custom",
+                    "options": [
+                        "30-days",
+                        "60-days",
+                        "90-days",
+                        "180-days",
+                        "1-year",
+                        "custom"
+                    ],
+                    "adminPath": "Purview > Data lifecycle management > Retention policies",
+                    "impact": "high",
+                    "tags": [
+                        "compliance",
+                        "retention",
+                        "data-lifecycle"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/retention-policies-copilot",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-people-skills",
+                    "name": "People Skills in Copilot",
+                    "description": "Allow AI-powered skill updates for user profiles, manageable from the Microsoft 365 admin center. Copilot can suggest skill updates based on user activity.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > People skills",
+                    "impact": "low",
+                    "tags": [
+                        "profile",
+                        "skills",
+                        "personalization"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/people-skills",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-02-15",
+                    "status": "active"
+                },
+                {
+                    "id": "dp-network-endpoints",
+                    "name": "Network Endpoint Configuration",
+                    "description": "Ensure required network endpoints for Microsoft 365 Copilot are not blocked by firewall or proxy. Critical for Copilot functionality.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Network configuration > Endpoints",
+                    "impact": "high",
+                    "tags": [
+                        "network",
+                        "firewall",
+                        "prerequisite"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "copilot-actions",
+            "name": "Copilot Actions & Features",
+            "icon": "⚡",
+            "description": "Define how Copilot generates responses and which features are available",
+            "adminCenter": "Microsoft 365 Admin Center",
+            "settings": [
+                {
+                    "id": "ca-image-generation",
+                    "name": "Copilot Image Generation",
+                    "description": "Allow Copilot to generate images using AI (DALL-E/Designer) in response to user prompts. Controls image creation across M365 apps.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Copilot actions > Image generation",
+                    "impact": "medium",
+                    "tags": [
+                        "features",
+                        "image-generation",
+                        "ai-content"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/manage-copilot-actions",
+                    "addedDate": "2024-03-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-agent-mode-word",
+                    "name": "Agent Mode in Word",
+                    "description": "Enable Agent Mode in Word, allowing Copilot to directly edit, refine, and rewrite documents based on natural language prompts. Copilot acts as an active editor.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Agent Mode > Word",
+                    "impact": "high",
+                    "tags": [
+                        "agent-mode",
+                        "word",
+                        "editing",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/agent-mode",
+                    "addedDate": "2026-01-15",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-agent-mode-excel",
+                    "name": "Agent Mode in Excel",
+                    "description": "Enable Agent Mode in Excel, allowing Copilot to analyze data, create formulas, build charts, and perform complex data operations autonomously.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Agent Mode > Excel",
+                    "impact": "high",
+                    "tags": [
+                        "agent-mode",
+                        "excel",
+                        "data-analysis",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/agent-mode",
+                    "addedDate": "2026-01-15",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-agent-mode-ppt",
+                    "name": "Agent Mode in PowerPoint",
+                    "description": "Enable Agent Mode in PowerPoint, allowing Copilot to create, edit, and enhance presentations including design, layout, and content generation.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Agent Mode > PowerPoint",
+                    "impact": "high",
+                    "tags": [
+                        "agent-mode",
+                        "powerpoint",
+                        "presentations",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/agent-mode",
+                    "addedDate": "2026-01-15",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-copilot-function-excel",
+                    "name": "=COPILOT() Function in Excel",
+                    "description": "Enable the =COPILOT() worksheet function in Excel that allows users to invoke AI capabilities directly in cell formulas.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Excel > COPILOT function",
+                    "impact": "medium",
+                    "tags": [
+                        "excel",
+                        "formulas",
+                        "coming-soon"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-excel",
+                    "addedDate": "2026-03-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "preview"
+                },
+                {
+                    "id": "ca-copilot-pages",
+                    "name": "Copilot Pages",
+                    "description": "Control creation and viewing of Copilot Pages —  collaborative AI-generated canvases. Managed via Cloud Policy settings or Conditional Access.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Cloud Policy (config.office.com) > Copilot Pages",
+                    "impact": "medium",
+                    "tags": [
+                        "copilot-pages",
+                        "collaboration",
+                        "content-creation"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-pages",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-voice-copilot",
+                    "name": "Voice Support in Copilot",
+                    "description": "Enable voice interaction with Copilot in Word and PowerPoint. Users can speak commands and receive audio responses.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Voice",
+                    "impact": "low",
+                    "tags": [
+                        "voice",
+                        "accessibility",
+                        "word",
+                        "powerpoint"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-voice",
+                    "addedDate": "2025-12-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ca-app-builder",
+                    "name": "Copilot App Builder",
+                    "description": "Allow users to create and deploy custom apps directly through Copilot using natural language. Part of the Microsoft 365 Copilot suite.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": false,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > App Builder",
+                    "impact": "high",
+                    "tags": [
+                        "app-builder",
+                        "low-code",
+                        "frontier",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/app-builder",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "preview"
+                }
+            ]
+        },
+        {
+            "id": "teams",
+            "name": "Teams Integration",
+            "icon": "💬",
+            "description": "Configure Copilot behavior in Microsoft Teams meetings, chats, and channels",
+            "adminCenter": "Teams Admin Center",
+            "settings": [
+                {
+                    "id": "tm-meeting-copilot",
+                    "name": "Copilot in Teams Meetings",
+                    "description": "Control Copilot availability during Teams meetings and events. Options range from fully enabled to requiring saved transcripts.",
+                    "type": "select",
+                    "defaultValue": "on-transcript-required",
+                    "recommendedValue": "on-transcript-saved",
+                    "options": [
+                        "on",
+                        "on-transcript-required",
+                        "on-transcript-saved",
+                        "off"
+                    ],
+                    "adminPath": "Teams Admin Center > Meetings > Meeting policies > Copilot",
+                    "impact": "high",
+                    "tags": [
+                        "teams",
+                        "meetings",
+                        "transcription"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/copilot-teams-transcription",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-transcription",
+                    "name": "Meeting Transcription",
+                    "description": "Enable transcription for the Global (Org-wide default) policy. Required prerequisite for Copilot to function in Teams meetings.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Meetings > Meeting policies > Recording & transcription",
+                    "impact": "high",
+                    "tags": [
+                        "teams",
+                        "transcription",
+                        "prerequisite"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/meeting-transcription-captions",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-06-01",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-meeting-recording",
+                    "name": "Meeting Recording",
+                    "description": "Configure meeting recording settings. Disabling Copilot for a meeting also disables recording and transcription for that meeting.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Meetings > Meeting policies > Recording & transcription",
+                    "impact": "medium",
+                    "tags": [
+                        "teams",
+                        "recording",
+                        "compliance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/meeting-recording",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-06-01",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-voice-isolation",
+                    "name": "Voice Isolation",
+                    "description": "Enable voice isolation in Teams Rooms to improve Copilot transcription accuracy by isolating individual speakers.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Teams devices > Voice isolation",
+                    "impact": "low",
+                    "tags": [
+                        "teams",
+                        "rooms",
+                        "audio"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/voice-isolation",
+                    "addedDate": "2025-01-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-facilitator",
+                    "name": "Facilitator Agent in Teams",
+                    "description": "Enable the Facilitator agent that provides real-time meeting notes, action items, and follow-up summaries during Teams meetings.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Meetings > Facilitator",
+                    "impact": "medium",
+                    "tags": [
+                        "teams",
+                        "facilitator",
+                        "agent",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/facilitator",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-copilot-chat-teams",
+                    "name": "Copilot Chat in Teams",
+                    "description": "Manage Copilot Chat availability and pinning within Microsoft Teams, transitioning from meeting-specific to unified context-aware experience.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Copilot > Chat settings",
+                    "impact": "medium",
+                    "tags": [
+                        "teams",
+                        "copilot-chat",
+                        "user-experience"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/copilot-chat-teams",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-02-15",
+                    "status": "active"
+                },
+                {
+                    "id": "tm-meeting-recap-notes",
+                    "name": "AI Meeting Recap Customization",
+                    "description": "Allow users to customize AI-generated notes in meeting recaps, including editing summaries and action items after meetings.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Teams Admin Center > Meetings > AI recaps",
+                    "impact": "low",
+                    "tags": [
+                        "teams",
+                        "meetings",
+                        "recap",
+                        "customization"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoftteams/meeting-recap",
+                    "addedDate": "2025-12-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "sharepoint",
+            "name": "SharePoint & OneDrive",
+            "icon": "📁",
+            "description": "Configure Copilot integration with SharePoint sites, document libraries, and OneDrive",
+            "adminCenter": "SharePoint Admin Center",
+            "settings": [
+                {
+                    "id": "sp-content-ai",
+                    "name": "AI Content Processing",
+                    "description": "Enable Copilot to assist with categorizing, tagging, and securing documents in SharePoint. Includes PII flagging, column filling, and metadata extraction.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "SharePoint Admin Center > Content services > AI processing",
+                    "impact": "high",
+                    "tags": [
+                        "sharepoint",
+                        "content",
+                        "classification",
+                        "ai"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/sharepoint/copilot-sharepoint",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sp-restricted-search",
+                    "name": "Restricted SharePoint Search",
+                    "description": "Implement restricted SharePoint search to control which sites Copilot can index and surface. Protect sensitive content repositories from AI access.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "SharePoint Admin Center > Search > Restricted search",
+                    "impact": "high",
+                    "tags": [
+                        "sharepoint",
+                        "search",
+                        "security",
+                        "data-governance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/sharepoint/restricted-copilot-search",
+                    "addedDate": "2024-12-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sp-agents",
+                    "name": "SharePoint Agents",
+                    "description": "Allow site owners to create, manage, approve, and share AI-powered agents within SharePoint for task automation and intelligent assistance.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "SharePoint Admin Center > Agents",
+                    "impact": "medium",
+                    "tags": [
+                        "sharepoint",
+                        "agents",
+                        "automation"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/sharepoint/sharepoint-agents",
+                    "addedDate": "2025-09-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sp-knowledge-sources",
+                    "name": "Knowledge Source Integration",
+                    "description": "Configure SharePoint sites, document libraries, folders, and lists as knowledge sources for Copilot Studio agents, enabling real-time data access.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "SharePoint Admin Center > Knowledge sources",
+                    "impact": "medium",
+                    "tags": [
+                        "sharepoint",
+                        "knowledge",
+                        "copilot-studio",
+                        "grounding"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-copilot-studio/knowledge-sharepoint",
+                    "addedDate": "2025-03-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sp-sam",
+                    "name": "SharePoint Advanced Management",
+                    "description": "Use SharePoint Advanced Management (SAM) to control content lifecycles, prevent oversharing, and implement data governance policies for Copilot access.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "SharePoint Admin Center > Advanced management",
+                    "impact": "high",
+                    "tags": [
+                        "sharepoint",
+                        "advanced-management",
+                        "oversharing",
+                        "governance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/sharepoint/advanced-management",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sp-copilot-grounding",
+                    "name": "Expanded Grounding (SharePoint Lists & Sites)",
+                    "description": "Allow Copilot Chat to ground responses using SharePoint lists, sites, and document libraries for more contextual and accurate answers.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Grounding > SharePoint",
+                    "impact": "medium",
+                    "tags": [
+                        "sharepoint",
+                        "grounding",
+                        "copilot-chat",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-grounding",
+                    "addedDate": "2026-03-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "exchange",
+            "name": "Exchange & Outlook",
+            "icon": "📧",
+            "description": "Configure Copilot behavior in Exchange Online and Outlook",
+            "adminCenter": "Exchange Admin Center",
+            "settings": [
+                {
+                    "id": "ex-copilot-outlook",
+                    "name": "Copilot in Outlook",
+                    "description": "Enable Copilot in Outlook for email drafting, summarization, coaching, and calendar assistance. Availability depends on Outlook version and mailbox location.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Exchange Admin Center > Copilot settings",
+                    "impact": "high",
+                    "tags": [
+                        "outlook",
+                        "email",
+                        "productivity"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/copilot-outlook",
+                    "addedDate": "2023-11-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ex-hybrid-mailbox",
+                    "name": "Hybrid Mailbox Behavior",
+                    "description": "Configure behavior for hybrid Exchange deployments. Copilot cannot directly access on-premises mailboxes — only cloud mailboxes are supported.",
+                    "type": "select",
+                    "defaultValue": "cloud-only",
+                    "recommendedValue": "cloud-only",
+                    "options": [
+                        "cloud-only",
+                        "hybrid-limited"
+                    ],
+                    "adminPath": "Exchange Admin Center > Hybrid > Copilot",
+                    "impact": "high",
+                    "tags": [
+                        "exchange",
+                        "hybrid",
+                        "on-premises",
+                        "limitation"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/exchange/hybrid-copilot",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ex-custom-agents-outlook",
+                    "name": "Custom Agents in Outlook",
+                    "description": "Allow users to access and interact with custom Copilot Studio agents directly within Outlook for task-specific assistance.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Exchange Admin Center > Agents > Outlook agents",
+                    "impact": "medium",
+                    "tags": [
+                        "outlook",
+                        "agents",
+                        "copilot-studio",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/agents-outlook",
+                    "addedDate": "2026-03-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "purview",
+            "name": "Microsoft Purview",
+            "icon": "🛡️",
+            "description": "Data security, compliance, and governance controls through Microsoft Purview",
+            "adminCenter": "Microsoft Purview Portal",
+            "settings": [
+                {
+                    "id": "pv-sensitivity-labels",
+                    "name": "Sensitivity Labels for Copilot",
+                    "description": "Apply and enforce sensitivity labels that Copilot must respect. Ensures labeled content maintains its protection level when processed by AI.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > Information protection > Labels",
+                    "impact": "high",
+                    "tags": [
+                        "purview",
+                        "labels",
+                        "classification",
+                        "protection"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/sensitivity-labels-copilot",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pv-dlp-copilot",
+                    "name": "DLP Policies for Copilot",
+                    "description": "Set Data Loss Prevention policies that apply to Copilot interactions. Prevent sensitive data from being exposed through AI-generated responses.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > Data loss prevention > Policies > Copilot",
+                    "impact": "high",
+                    "tags": [
+                        "purview",
+                        "dlp",
+                        "data-protection",
+                        "compliance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/dlp-copilot",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-01-15",
+                    "status": "active"
+                },
+                {
+                    "id": "pv-retention",
+                    "name": "Copilot Data Retention Policies",
+                    "description": "Set retention and deletion policies for data generated by Copilot interactions. Supports regulatory compliance and data lifecycle management.",
+                    "type": "select",
+                    "defaultValue": "default",
+                    "recommendedValue": "custom",
+                    "options": [
+                        "default",
+                        "30-days",
+                        "90-days",
+                        "1-year",
+                        "7-years",
+                        "custom"
+                    ],
+                    "adminPath": "Purview > Data lifecycle management > Retention policies",
+                    "impact": "high",
+                    "tags": [
+                        "purview",
+                        "retention",
+                        "compliance",
+                        "data-lifecycle"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/retention-policies-copilot",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pv-oversharing-reports",
+                    "name": "Data Access Governance Reports",
+                    "description": "Identify overshared data across Microsoft 365 (SharePoint sites, OneDrive, Teams). Send access reviews to site owners to remediate oversharing risks.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > Data access governance > Reports",
+                    "impact": "high",
+                    "tags": [
+                        "purview",
+                        "oversharing",
+                        "access-reviews",
+                        "governance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/data-access-governance",
+                    "addedDate": "2025-03-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pv-ediscovery",
+                    "name": "eDiscovery for Copilot Data",
+                    "description": "Use Microsoft Purview eDiscovery to search, hold, and export Copilot interaction data for legal and compliance investigations.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > eDiscovery > Content search",
+                    "impact": "medium",
+                    "tags": [
+                        "purview",
+                        "ediscovery",
+                        "legal",
+                        "compliance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/ediscovery-copilot",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pv-audit-logging",
+                    "name": "Unified Audit Logging for Copilot",
+                    "description": "Enable unified audit logging to capture user and admin Copilot activities. Essential for monitoring usage, detecting risks, and compliance reporting.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > Audit > Audit policies",
+                    "impact": "high",
+                    "tags": [
+                        "purview",
+                        "audit",
+                        "monitoring",
+                        "compliance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/audit-copilot",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "agent-governance",
+            "name": "Agent Governance",
+            "icon": "🤖",
+            "description": "Control AI agent creation, deployment, connectors, and approval workflows",
+            "adminCenter": "M365 Admin Center / Copilot Studio",
+            "settings": [
+                {
+                    "id": "ag-agent-creation",
+                    "name": "Agent Creation Permissions",
+                    "description": "Control who can create and publish AI agents in your organization. Define which users or groups have agent creation privileges.",
+                    "type": "select",
+                    "defaultValue": "all-users",
+                    "recommendedValue": "specific-groups",
+                    "options": [
+                        "all-users",
+                        "specific-groups",
+                        "admins-only",
+                        "disabled"
+                    ],
+                    "adminPath": "Copilot > Settings > Agents > Creation permissions",
+                    "impact": "high",
+                    "tags": [
+                        "agents",
+                        "permissions",
+                        "governance",
+                        "copilot-studio"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-copilot-studio/admin-agent-governance",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-agent-deployment",
+                    "name": "Agent Deployment Approval",
+                    "description": "Configure approval workflows for deploying agents. Define review processes for high-impact use cases before agents go live.",
+                    "type": "select",
+                    "defaultValue": "auto-approve",
+                    "recommendedValue": "require-approval",
+                    "options": [
+                        "auto-approve",
+                        "require-approval",
+                        "admin-only"
+                    ],
+                    "adminPath": "Copilot > Settings > Agents > Deployment",
+                    "impact": "high",
+                    "tags": [
+                        "agents",
+                        "deployment",
+                        "approval",
+                        "governance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-copilot-studio/admin-agent-deployment",
+                    "addedDate": "2025-09-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-prebuilt-agents",
+                    "name": "Pre-built Microsoft Agents",
+                    "description": "Control which pre-built Microsoft 365 agents are available to users, including agent permissions, data access requirements, and usage terms.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Copilot > Settings > Agents > Pre-built agents",
+                    "impact": "medium",
+                    "tags": [
+                        "agents",
+                        "prebuilt",
+                        "microsoft"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/prebuilt-agents",
+                    "addedDate": "2025-03-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-mcp-connectors",
+                    "name": "Custom MCP Connectors",
+                    "description": "Allow admins to create and deploy custom Model Context Protocol (MCP) connectors to integrate proprietary data sources with Copilot.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "M365 Admin Center > Settings > Copilot > Connectors > MCP",
+                    "impact": "high",
+                    "tags": [
+                        "connectors",
+                        "mcp",
+                        "custom-data",
+                        "integration",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/mcp-connectors",
+                    "addedDate": "2025-12-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-federated-connectors",
+                    "name": "Federated Connectors Governance",
+                    "description": "Govern availability of federated connectors. Review, enable, and disable connectors. Connector Usage Report provides activity insights.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "M365 Admin Center > Settings > Copilot > Federated connectors",
+                    "impact": "medium",
+                    "tags": [
+                        "connectors",
+                        "federated",
+                        "governance",
+                        "reporting"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/federated-connectors",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-02-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-third-party-plugins",
+                    "name": "Third-Party Copilot Plugins",
+                    "description": "Control third-party Copilot plugins enabled for licensed users. Allow-list specific users/groups or block certain apps to mitigate governance and security risks.",
+                    "type": "select",
+                    "defaultValue": "all-enabled",
+                    "recommendedValue": "allowlist",
+                    "options": [
+                        "all-enabled",
+                        "allowlist",
+                        "blocklist",
+                        "disabled"
+                    ],
+                    "adminPath": "M365 Admin Center > Settings > Integrated Apps > Copilot plugins",
+                    "impact": "high",
+                    "tags": [
+                        "plugins",
+                        "third-party",
+                        "governance",
+                        "security"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/manage-plugins",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "ag-viva-engage-agents",
+                    "name": "Agents in Viva Engage Communities",
+                    "description": "Deploy AI agents within Viva Engage communities to facilitate discussions, answer questions, and enhance community engagement.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": false,
+                    "options": null,
+                    "adminPath": "Viva Admin Center > Engage > Agent settings",
+                    "impact": "medium",
+                    "tags": [
+                        "viva-engage",
+                        "agents",
+                        "communities",
+                        "coming-soon"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/viva/engage/agents",
+                    "addedDate": "2026-03-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "preview"
+                },
+                {
+                    "id": "ag-microsoft-agent-365",
+                    "name": "Microsoft Agent 365 Control Plane",
+                    "description": "The centralized control plane for managing all AI agents across Microsoft 365. Provides identity, policy, and lifecycle management for agents.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": false,
+                    "options": null,
+                    "adminPath": "M365 Admin Center > Agent 365",
+                    "impact": "high",
+                    "tags": [
+                        "agent-365",
+                        "control-plane",
+                        "governance",
+                        "frontier",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365/agent-365",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "preview"
+                }
+            ]
+        },
+        {
+            "id": "power-fabric",
+            "name": "Power Platform & Fabric",
+            "icon": "⚙️",
+            "description": "Copilot settings for Power Platform, Dynamics 365, and Microsoft Fabric (including Power BI)",
+            "adminCenter": "Power Platform Admin Center / Fabric Admin",
+            "settings": [
+                {
+                    "id": "pf-copilot-power-apps",
+                    "name": "Copilot in Power Apps",
+                    "description": "Enable Copilot capabilities in Power Apps, including AI-assisted app development, formula generation, and natural language queries.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Power Platform Admin Center > Environments > Settings > Copilot",
+                    "impact": "medium",
+                    "tags": [
+                        "power-platform",
+                        "power-apps",
+                        "low-code"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/power-apps/maker/canvas-apps/ai-overview",
+                    "addedDate": "2024-03-01",
+                    "lastModifiedDate": "2025-12-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pf-copilot-power-bi",
+                    "name": "Copilot in Power BI / Fabric",
+                    "description": "Control Copilot and Azure OpenAI Service tenant settings for Microsoft Fabric and Power BI. Manage user access and data processing policies.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Fabric Admin Portal > Tenant settings > Copilot and Azure OpenAI Service",
+                    "impact": "medium",
+                    "tags": [
+                        "fabric",
+                        "power-bi",
+                        "analytics",
+                        "azure-openai"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/fabric/admin/copilot-tenant-settings",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pf-data-collection",
+                    "name": "Copilot Data Collection & Feedback",
+                    "description": "Control data collection and user feedback mechanisms for Copilot in Power Platform and Dynamics 365.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Power Platform Admin Center > Settings > Data collection",
+                    "impact": "medium",
+                    "tags": [
+                        "power-platform",
+                        "feedback",
+                        "telemetry"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/power-platform/admin/copilot-data",
+                    "addedDate": "2024-06-01",
+                    "lastModifiedDate": "2025-09-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pf-copilot-studio-publish",
+                    "name": "Copilot Studio AI Publishing",
+                    "description": "Control publication of copilots with AI features from Copilot Studio. Define who can publish and to which channels.",
+                    "type": "select",
+                    "defaultValue": "all-makers",
+                    "recommendedValue": "approved-only",
+                    "options": [
+                        "all-makers",
+                        "approved-only",
+                        "admins-only",
+                        "disabled"
+                    ],
+                    "adminPath": "Power Platform Admin Center > Copilot Studio > Publishing",
+                    "impact": "high",
+                    "tags": [
+                        "copilot-studio",
+                        "publishing",
+                        "governance"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-copilot-studio/admin-publishing",
+                    "addedDate": "2025-03-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "pf-copilot-studio-trial",
+                    "name": "Block Copilot Studio Free Trial",
+                    "description": "Block free trial sign-ups for Copilot Studio using Azure PowerShell tenant-level controls.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Azure PowerShell > Set-MsolCompanySettings",
+                    "impact": "medium",
+                    "tags": [
+                        "copilot-studio",
+                        "trial",
+                        "licensing",
+                        "azure"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-copilot-studio/admin-block-trial",
+                    "addedDate": "2024-12-01",
+                    "lastModifiedDate": "2025-06-01",
+                    "status": "active"
+                }
+            ]
+        },
+        {
+            "id": "security",
+            "name": "Security & Compliance",
+            "icon": "🔐",
+            "description": "Security posture management, conditional access, and compliance controls for AI",
+            "adminCenter": "Microsoft Defender / Entra ID",
+            "settings": [
+                {
+                    "id": "sc-conditional-access",
+                    "name": "Conditional Access for Copilot",
+                    "description": "Review and adjust Conditional Access policies to ensure they don't inadvertently block Copilot. Configure policies specific to AI workloads.",
+                    "type": "toggle",
+                    "defaultValue": true,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Entra ID > Security > Conditional Access > Policies",
+                    "impact": "high",
+                    "tags": [
+                        "security",
+                        "conditional-access",
+                        "entra-id",
+                        "zero-trust"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-copilot",
+                    "addedDate": "2024-01-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sc-ai-security-posture",
+                    "name": "AI Security Posture Management",
+                    "description": "Use Microsoft Defender AI Security Posture Management to maintain a risk-based inventory of AI agents, assess security posture, and identify vulnerabilities.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Microsoft Defender > AI security posture",
+                    "impact": "high",
+                    "tags": [
+                        "defender",
+                        "security-posture",
+                        "risk-management",
+                        "agents"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/defender/ai-security-posture",
+                    "addedDate": "2026-01-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sc-information-barriers",
+                    "name": "Information Barriers for Copilot",
+                    "description": "Configure information barrier policies that restrict Copilot from crossing organizational boundaries, preventing unauthorized data sharing between segments.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Purview > Information barriers > Policies",
+                    "impact": "high",
+                    "tags": [
+                        "compliance",
+                        "information-barriers",
+                        "segmentation"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/purview/information-barriers",
+                    "addedDate": "2024-12-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sc-siem-integration",
+                    "name": "SIEM Integration for Copilot Logs",
+                    "description": "Integrate Copilot activity logs with Security Information and Event Management (SIEM) systems for centralized security monitoring and alerting.",
+                    "type": "toggle",
+                    "defaultValue": false,
+                    "recommendedValue": true,
+                    "options": null,
+                    "adminPath": "Microsoft Defender > Settings > SIEM integration",
+                    "impact": "medium",
+                    "tags": [
+                        "security",
+                        "siem",
+                        "monitoring",
+                        "logging"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/defender/siem-copilot",
+                    "addedDate": "2025-06-01",
+                    "lastModifiedDate": "2026-01-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sc-model-choice",
+                    "name": "AI Model Selection Policy",
+                    "description": "Configure which AI models are available for Copilot (GPT-5.2, Anthropic Claude via partnership). Part of Microsoft's model choice expansion.",
+                    "type": "select",
+                    "defaultValue": "microsoft-default",
+                    "recommendedValue": "microsoft-default",
+                    "options": [
+                        "microsoft-default",
+                        "gpt-5.2-only",
+                        "anthropic-enabled",
+                        "all-models"
+                    ],
+                    "adminPath": "Copilot > Settings > AI Models",
+                    "impact": "high",
+                    "tags": [
+                        "models",
+                        "gpt",
+                        "anthropic",
+                        "security",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/model-choice",
+                    "addedDate": "2026-02-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "active"
+                },
+                {
+                    "id": "sc-multi-agent-architecture",
+                    "name": "Multi-Agent Architecture Controls",
+                    "description": "Configure controls for multi-agent architectures where multiple AI agents can work together on complex workflows. Define inter-agent communication policies.",
+                    "type": "select",
+                    "defaultValue": "disabled",
+                    "recommendedValue": "controlled",
+                    "options": [
+                        "disabled",
+                        "controlled",
+                        "open"
+                    ],
+                    "adminPath": "Copilot > Settings > Multi-agent",
+                    "impact": "high",
+                    "tags": [
+                        "agents",
+                        "multi-agent",
+                        "architecture",
+                        "new"
+                    ],
+                    "msDocsUrl": "https://learn.microsoft.com/microsoft-365-copilot/multi-agent",
+                    "addedDate": "2026-03-01",
+                    "lastModifiedDate": "2026-03-01",
+                    "status": "preview"
+                }
+            ]
+        }
+    ]
+}

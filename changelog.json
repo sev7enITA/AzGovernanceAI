@@ -1,0 +1,257 @@
+{
+    "version": "2026.03",
+    "entries": [
+        {
+            "date": "2026-03-05",
+            "version": "1.1.0",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "gap-analysis",
+                    "setting": "gap-analysis-view",
+                    "description": "New Gap Analysis view: compare HQ golden configuration vs live tenant snapshots"
+                },
+                {
+                    "type": "added",
+                    "category": "gap-analysis",
+                    "setting": "tenant-snapshot-ps1",
+                    "description": "PowerShell script (tenant-snapshot.ps1) to extract live settings via Graph API, Teams, SharePoint, Purview, Entra ID"
+                },
+                {
+                    "type": "added",
+                    "category": "gap-analysis",
+                    "setting": "tenant-snapshot-sh",
+                    "description": "Bash wrapper (tenant-snapshot.sh) using Microsoft Graph CLI (mgc) for Mac/Linux"
+                },
+                {
+                    "type": "added",
+                    "category": "gap-analysis",
+                    "setting": "compliance-score",
+                    "description": "HQ Compliance Score with ✅ Compliant / ⚠️ Divergent / ❌ Missing / 🔶 Partial breakdown"
+                },
+                {
+                    "type": "added",
+                    "category": "gap-analysis",
+                    "setting": "gap-report-export",
+                    "description": "Export gap analysis results as HTML report or JSON for management and auditing"
+                },
+                {
+                    "type": "added",
+                    "category": "automation",
+                    "setting": "sync-roadmap",
+                    "description": "Automated roadmap sync via GitHub Action — weekly check of M365 Message Center for new Copilot features"
+                },
+                {
+                    "type": "added",
+                    "category": "automation",
+                    "setting": "sync-roadmap-script",
+                    "description": "sync-roadmap.ts script: authenticates with Graph API, fetches MC announcements, diffs with roadmap.json, opens PR"
+                }
+            ]
+        },
+        {
+            "date": "2026-03-05",
+            "version": "2026.03",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-copilot-function-excel",
+                    "description": "Added =COPILOT() function setting for Excel (Preview)"
+                },
+                {
+                    "type": "added",
+                    "category": "sharepoint",
+                    "setting": "sp-copilot-grounding",
+                    "description": "Added expanded grounding for SharePoint lists and sites in Copilot Chat"
+                },
+                {
+                    "type": "added",
+                    "category": "exchange",
+                    "setting": "ex-custom-agents-outlook",
+                    "description": "Added custom agents access in Outlook"
+                },
+                {
+                    "type": "added",
+                    "category": "agent-governance",
+                    "setting": "ag-viva-engage-agents",
+                    "description": "Added agents in Viva Engage Communities (Preview)"
+                },
+                {
+                    "type": "added",
+                    "category": "security",
+                    "setting": "sc-multi-agent-architecture",
+                    "description": "Added multi-agent architecture controls (Preview)"
+                }
+            ]
+        },
+        {
+            "date": "2026-02-15",
+            "version": "2026.02",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "data-privacy",
+                    "setting": "dp-people-skills",
+                    "description": "Added AI-powered People Skills management"
+                },
+                {
+                    "type": "added",
+                    "category": "teams",
+                    "setting": "tm-facilitator",
+                    "description": "Added Facilitator agent in Teams meetings"
+                },
+                {
+                    "type": "added",
+                    "category": "teams",
+                    "setting": "tm-copilot-chat-teams",
+                    "description": "Copilot in Teams meetings transitioned to Copilot Chat"
+                },
+                {
+                    "type": "added",
+                    "category": "security",
+                    "setting": "sc-model-choice",
+                    "description": "Added AI model selection policy (GPT-5.2, Anthropic)"
+                },
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-app-builder",
+                    "description": "Added Copilot App Builder (Preview)"
+                },
+                {
+                    "type": "added",
+                    "category": "agent-governance",
+                    "setting": "ag-microsoft-agent-365",
+                    "description": "Added Microsoft Agent 365 control plane (Preview)"
+                },
+                {
+                    "type": "modified",
+                    "category": "security",
+                    "setting": "sc-ai-security-posture",
+                    "description": "Enhanced AI Security Posture with risk-based agent inventory"
+                }
+            ]
+        },
+        {
+            "date": "2026-01-15",
+            "version": "2026.01",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-agent-mode-word",
+                    "description": "Agent Mode now available in Word"
+                },
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-agent-mode-excel",
+                    "description": "Agent Mode now available in Excel"
+                },
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-agent-mode-ppt",
+                    "description": "Agent Mode now available in PowerPoint"
+                },
+                {
+                    "type": "modified",
+                    "category": "purview",
+                    "setting": "pv-dlp-copilot",
+                    "description": "Purview DLP now integrated into M365 admin center for Copilot"
+                },
+                {
+                    "type": "modified",
+                    "category": "purview",
+                    "setting": "pv-oversharing-reports",
+                    "description": "Enhanced oversharing risk assessment with remediation actions"
+                }
+            ]
+        },
+        {
+            "date": "2025-12-01",
+            "version": "2025.12",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-voice-copilot",
+                    "description": "Voice support launched for Copilot in Word and PowerPoint"
+                },
+                {
+                    "type": "added",
+                    "category": "agent-governance",
+                    "setting": "ag-mcp-connectors",
+                    "description": "Custom MCP connectors now available for admin deployment"
+                },
+                {
+                    "type": "added",
+                    "category": "teams",
+                    "setting": "tm-meeting-recap-notes",
+                    "description": "Users can now customize AI-generated meeting recap notes"
+                }
+            ]
+        },
+        {
+            "date": "2025-09-01",
+            "version": "2025.09",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "data-privacy",
+                    "setting": "dp-user-memory",
+                    "description": "Copilot Memory & Personalization settings launched"
+                },
+                {
+                    "type": "added",
+                    "category": "sharepoint",
+                    "setting": "sp-agents",
+                    "description": "SharePoint Agents launched for site-level AI automation"
+                },
+                {
+                    "type": "modified",
+                    "category": "agent-governance",
+                    "setting": "ag-agent-deployment",
+                    "description": "Added approval workflow configuration for agent deployment"
+                }
+            ]
+        },
+        {
+            "date": "2025-06-01",
+            "version": "2025.06",
+            "changes": [
+                {
+                    "type": "added",
+                    "category": "user-access",
+                    "setting": "ua-copilot-frontier",
+                    "description": "Copilot Frontier Program launched for preview features"
+                },
+                {
+                    "type": "added",
+                    "category": "copilot-actions",
+                    "setting": "ca-copilot-pages",
+                    "description": "Copilot Pages launched for collaborative AI canvases"
+                },
+                {
+                    "type": "added",
+                    "category": "purview",
+                    "setting": "pv-dlp-copilot",
+                    "description": "DLP policies now apply to Copilot interactions"
+                },
+                {
+                    "type": "added",
+                    "category": "agent-governance",
+                    "setting": "ag-agent-creation",
+                    "description": "Agent creation permissions now configurable"
+                },
+                {
+                    "type": "added",
+                    "category": "security",
+                    "setting": "sc-siem-integration",
+                    "description": "SIEM integration for Copilot activity logs"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1209 @@
+{
+    "lastUpdated": "2026-03-05",
+    "sections": [
+        {
+            "id": "now-available",
+            "title": "Now Available",
+            "icon": "✅",
+            "items": [
+                {
+                    "id": "r-gpt52",
+                    "title": "GPT-5.2 in Microsoft 365 Copilot",
+                    "description": "GPT-5.2 now powers Microsoft 365 Copilot for enhanced reasoning, multi-step execution, and complex problem solving",
+                    "date": "2025-12-15",
+                    "releaseDate": "2025-12-15",
+                    "category": "AI Models",
+                    "tags": [
+                        "AI Models",
+                        "GPT-5.2",
+                        "Performance"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "EU Data Boundary compliant. Local LLM processing in DE, IT, PL, ES, SE by 2026.",
+                            "regulation": "GDPR, EU AI Act Art.52 transparency"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "Full availability across US, Canada, LatAm. US data centers primary.",
+                            "regulation": "State privacy laws, CCPA"
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "UAE in-country processing from early 2026. Dubai & Abu Dhabi DCs.",
+                            "regulation": "UAE PDPL, Saudi PDPL"
+                        }
+                    }
+                },
+                {
+                    "id": "r-anthropic",
+                    "title": "Anthropic Model Partnership",
+                    "description": "Microsoft expands model choice through Anthropic partnership with data processing agreement, enabling Claude models alongside GPT",
+                    "date": "2026-02-15",
+                    "releaseDate": "2026-02-15",
+                    "category": "AI Models",
+                    "tags": [
+                        "AI Models",
+                        "Anthropic",
+                        "Claude",
+                        "Partnership"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "⚠️ Anthropic models currently OUTSIDE EU Data Boundary scope.",
+                            "regulation": "GDPR Art.44 international transfers apply"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "Full availability. Processed via Anthropic US infrastructure.",
+                            "regulation": "Standard contractual terms"
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Not yet available. Data sovereignty review pending.",
+                            "regulation": "Country-specific approval required"
+                        }
+                    }
+                },
+                {
+                    "id": "r-agent-mode-word",
+                    "title": "Agent Mode in Word",
+                    "description": "Copilot can directly edit, refine, and rewrite documents based on natural language prompts. 'Edit with Copilot' active by default",
+                    "date": "2026-01-15",
+                    "releaseDate": "2026-01-15",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Word",
+                        "Agent Mode",
+                        "Editing"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Available. Sensitivity labels enforced. DLP policies apply.",
+                            "regulation": "EU AI Act transparency requirements"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available where Copilot licensed.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-agent-mode-excel",
+                    "title": "Agent Mode in Excel",
+                    "description": "Copilot autonomously analyzes data, creates formulas, builds charts, and performs complex data operations in Excel",
+                    "date": "2026-01-15",
+                    "releaseDate": "2026-01-15",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Excel",
+                        "Agent Mode",
+                        "Data Analysis"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "DLP for financial data recommended.",
+                            "regulation": "GDPR profiling rules may apply for personal data analysis"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-facilitator",
+                    "title": "Facilitator Agent in Teams",
+                    "description": "AI facilitator provides real-time meeting notes, action items, and follow-up summaries during Teams meetings",
+                    "date": "2026-02-01",
+                    "releaseDate": "2026-02-01",
+                    "category": "Teams",
+                    "tags": [
+                        "Teams",
+                        "Meetings",
+                        "Agent",
+                        "Notes"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Transcription data stored in EU. DPIA recommended for large-scale use.",
+                            "regulation": "GDPR Art.35 DPIA, Works Council notification in DE/AT/NL"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": "State recording consent laws may apply"
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available. Local recording laws apply.",
+                            "regulation": "UAE Cybercrime Law for recordings"
+                        }
+                    }
+                },
+                {
+                    "id": "r-mcp-connectors",
+                    "title": "Custom MCP Connectors",
+                    "description": "Admins can create and deploy custom Model Context Protocol connectors from M365 Admin Center to integrate proprietary data",
+                    "date": "2025-12-01",
+                    "releaseDate": "2025-12-01",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Connectors",
+                        "MCP",
+                        "Integration",
+                        "Custom Data"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Data flowing through connectors subject to GDPR. Conduct DPIA for sensitive data sources.",
+                            "regulation": "GDPR Art.25 privacy by design"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available. Verify data doesn't cross borders.",
+                            "regulation": "Data localization requirements"
+                        }
+                    }
+                },
+                {
+                    "id": "r-copilot-readiness",
+                    "title": "Copilot Readiness Dashboard",
+                    "description": "New centralized readiness page in M365 admin center with deployment essentials, end-user experience, and data security configurations",
+                    "date": "2026-01-15",
+                    "releaseDate": "2026-01-15",
+                    "category": "Admin",
+                    "tags": [
+                        "Admin Center",
+                        "Deployment",
+                        "Readiness"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Includes EU-specific compliance checklist.",
+                            "regulation": ""
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-voice-copilot",
+                    "title": "Voice Support in Word & PowerPoint",
+                    "description": "Voice interaction with Copilot for speaking commands and receiving audio responses in Word and PowerPoint",
+                    "date": "2025-12-01",
+                    "releaseDate": "2025-12-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Voice",
+                        "Accessibility",
+                        "Word",
+                        "PowerPoint"
+                    ],
+                    "impact": "low",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Voice memory feature requires updated Purview policies in 2026.",
+                            "regulation": "GDPR for voice biometric data"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": "BIPA in Illinois for voice data"
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available. Voice data processing location to be verified.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-sp-grounding",
+                    "title": "Expanded SharePoint Grounding",
+                    "description": "Copilot Chat grounds responses using SharePoint lists, sites, and document libraries for contextual answers",
+                    "date": "2026-03-01",
+                    "releaseDate": "2026-03-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "SharePoint",
+                        "Grounding",
+                        "Copilot Chat"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Restricted search recommended to limit sensitive site exposure.",
+                            "regulation": "GDPR data minimization"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-people-skills",
+                    "title": "AI-Powered People Skills",
+                    "description": "AI-powered skill updates for user profiles, manageable from the Microsoft 365 admin center",
+                    "date": "2026-02-01",
+                    "releaseDate": "2026-02-01",
+                    "category": "Data Privacy",
+                    "tags": [
+                        "Profile",
+                        "Skills",
+                        "Personalization"
+                    ],
+                    "impact": "low",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Employee profiling may require Works Council approval in DE/AT/FR.",
+                            "regulation": "GDPR Art.22 automated profiling"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Available.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-purview-m365",
+                    "title": "Purview Integration in M365 Admin",
+                    "description": "Microsoft Purview integrated into M365 admin center for unified data security visibility, oversharing risk assessment, and DLP for Copilot",
+                    "date": "2026-01-15",
+                    "releaseDate": "2026-01-15",
+                    "category": "Security",
+                    "tags": [
+                        "Purview",
+                        "DLP",
+                        "Oversharing",
+                        "Admin Center"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": true,
+                            "notes": "Critical for GDPR compliance. Enables oversharing detection.",
+                            "regulation": "GDPR Art.32 security measures"
+                        },
+                        "americas": {
+                            "available": true,
+                            "notes": "General availability.",
+                            "regulation": "SOX compliance relevant"
+                        },
+                        "middleEast": {
+                            "available": true,
+                            "notes": "Recommended for PDPL compliance.",
+                            "regulation": "UAE PDPL, Saudi PDPL"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "coming-soon",
+            "title": "Coming Soon",
+            "icon": "🔜",
+            "items": [
+                {
+                    "id": "r-agent-mode-ppt",
+                    "title": "Agent Mode in PowerPoint",
+                    "description": "Copilot creates, edits, and enhances presentations including design, layout, and content. Chat-based rewriting and speaker notes",
+                    "date": "2026-Q2",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "PowerPoint",
+                        "Agent Mode",
+                        "Presentations"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Expected Q2 2026. Will follow EU Data Boundary.",
+                            "regulation": ""
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-copilot-function",
+                    "title": "=COPILOT() Function in Excel",
+                    "description": "Invoke AI capabilities directly in cell formulas with the =COPILOT() worksheet function for text generation, classification, summarization",
+                    "date": "2026-Q4",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Excel",
+                        "Formulas",
+                        "Function"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Expected Q4 2026.",
+                            "regulation": "EU AI Act transparency for automated decisions"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected Q4 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected Q4 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-viva-engage-agents",
+                    "title": "Agents in Viva Engage Communities",
+                    "description": "Deploy AI agents within Viva Engage communities for enhanced discussions, Q&A, and community engagement",
+                    "date": "2026-Q2",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Viva Engage",
+                        "Communities",
+                        "Agents"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Works Council implications for employee monitoring.",
+                            "regulation": "GDPR, national labor laws"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-multi-agent",
+                    "title": "Multi-Agent Architecture",
+                    "description": "Multiple AI agents working together on complex, sophisticated workflows with inter-agent communication policies",
+                    "date": "2026-Q2",
+                    "category": "Security",
+                    "tags": [
+                        "Multi-Agent",
+                        "Architecture",
+                        "Workflows"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "High-risk AI system under EU AI Act. Requires conformity assessment.",
+                            "regulation": "EU AI Act Annex III"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-agents-outlook",
+                    "title": "Custom Agents in Outlook",
+                    "description": "Access and interact with custom Copilot Studio agents directly within Outlook for task-specific assistance",
+                    "date": "2026-Q2",
+                    "category": "Exchange",
+                    "tags": [
+                        "Outlook",
+                        "Agents",
+                        "Copilot Studio"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Agent data access governed by existing permissions.",
+                            "regulation": ""
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected Q2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-reimagined-sp",
+                    "title": "Reimagined SharePoint",
+                    "description": "Significant upgrade establishing foundation for AI-assisted creation with modern page experiences and Copilot integration",
+                    "date": "2026-Q2",
+                    "category": "SharePoint",
+                    "tags": [
+                        "SharePoint",
+                        "Redesign",
+                        "AI-assisted"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Preview March 2026, target release April 2026.",
+                            "regulation": ""
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Preview March 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Preview March 2026.",
+                            "regulation": ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "frontier",
+            "title": "Frontier Program",
+            "icon": "🚀",
+            "items": [
+                {
+                    "id": "r-agent-365",
+                    "title": "Microsoft Agent 365",
+                    "description": "Centralized control plane for managing all AI agents across M365 with identity, policy, email, Teams access, and lifecycle management",
+                    "date": "2026-H2",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Agent 365",
+                        "Control Plane",
+                        "Governance"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Critical governance tool. Expected to support EU AI Act agent inventory requirements.",
+                            "regulation": "EU AI Act Art.49"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-sales-agent",
+                    "title": "Sales Development Agent",
+                    "description": "AI agent dedicated to sales development workflows, customer engagement, pipeline management, and CRM integration",
+                    "date": "2026-H2",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Sales",
+                        "Agent",
+                        "CRM",
+                        "Dynamics 365"
+                    ],
+                    "impact": "medium",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Customer data processing requires DPIA.",
+                            "regulation": "GDPR, ePrivacy Directive"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": "CAN-SPAM, TCPA"
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-app-builder",
+                    "title": "Copilot App Builder",
+                    "description": "Create and deploy custom apps through natural language using Copilot. Low-code/no-code application development",
+                    "date": "2026-H2",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "App Builder",
+                        "Low-Code",
+                        "Development"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Apps handling personal data must comply with GDPR by design.",
+                            "regulation": "GDPR Art.25 privacy by design"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Expected H2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                },
+                {
+                    "id": "r-e7-tier",
+                    "title": "Microsoft 365 E7 Tier (Speculated)",
+                    "description": "Potential new subscription tier bundling Copilot + advanced AI agent management, treating agents as managed entities with identity and policies",
+                    "date": "2026-H2",
+                    "category": "Licensing",
+                    "tags": [
+                        "E7",
+                        "Licensing",
+                        "Agents",
+                        "Speculated"
+                    ],
+                    "impact": "high",
+                    "regions": {
+                        "europe": {
+                            "available": false,
+                            "notes": "Would simplify per-agent governance billing. EU competitive scrutiny possible.",
+                            "regulation": "EU Digital Markets Act"
+                        },
+                        "americas": {
+                            "available": false,
+                            "notes": "Speculated for H2 2026.",
+                            "regulation": ""
+                        },
+                        "middleEast": {
+                            "available": false,
+                            "notes": "Speculated for H2 2026.",
+                            "regulation": ""
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "history-2025",
+            "title": "Released in 2025",
+            "icon": "📅",
+            "items": [
+                {
+                    "id": "r-copilot-pages-2025",
+                    "title": "Copilot Pages GA",
+                    "description": "Collaborative AI-generated canvases for multi-colleague collaboration, editing, and sharing AI content as business assets",
+                    "date": "2025-06-01",
+                    "releaseDate": "2025-06-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Pages",
+                        "Collaboration"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-frontier-launch",
+                    "title": "Copilot Frontier Program Launch",
+                    "description": "Preview program for experimental Copilot features including early access to Agent Mode and new AI models",
+                    "date": "2025-06-01",
+                    "releaseDate": "2025-06-01",
+                    "category": "User Access",
+                    "tags": [
+                        "Frontier",
+                        "Preview"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-dlp-copilot-2025",
+                    "title": "DLP Policies for Copilot",
+                    "description": "Data Loss Prevention policies now apply to Copilot interactions, preventing sensitive data exposure in AI responses",
+                    "date": "2025-06-01",
+                    "releaseDate": "2025-06-01",
+                    "category": "Purview",
+                    "tags": [
+                        "DLP",
+                        "Security",
+                        "Compliance"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-sp-agents-2025",
+                    "title": "SharePoint Agents",
+                    "description": "Site owners can create, manage, and share AI-powered agents within SharePoint for task automation",
+                    "date": "2025-09-01",
+                    "releaseDate": "2025-09-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "Agents",
+                        "SharePoint",
+                        "Automation"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-memory-2025",
+                    "title": "Copilot Memory & Personalization",
+                    "description": "Copilot remembers user preferences across sessions. Users can view, manage, and delete memories",
+                    "date": "2025-09-01",
+                    "releaseDate": "2025-09-01",
+                    "category": "Privacy",
+                    "tags": [
+                        "Memory",
+                        "Personalization",
+                        "Privacy"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-proactive",
+                    "title": "Proactive & Multimodal Copilot",
+                    "description": "Copilot becomes proactive, suggesting actions before being asked. Multimodal input support (images, voice, text)",
+                    "date": "2025-05-01",
+                    "releaseDate": "2025-05-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Proactive",
+                        "Multimodal"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-siem-2025",
+                    "title": "SIEM Integration for Copilot",
+                    "description": "Copilot activity logs integrable with Security Information and Event Management systems",
+                    "date": "2025-06-01",
+                    "releaseDate": "2025-06-01",
+                    "category": "Security",
+                    "tags": [
+                        "SIEM",
+                        "Monitoring",
+                        "Logging"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-analytics-2025",
+                    "title": "Copilot Analytics GA",
+                    "description": "Measure adoption and business impact with out-of-the-box experiences, Viva Insights at no extra charge",
+                    "date": "2025-01-15",
+                    "releaseDate": "2025-01-15",
+                    "category": "Admin",
+                    "tags": [
+                        "Analytics",
+                        "Viva Insights",
+                        "Adoption"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-ai-admin-role-2025",
+                    "title": "AI Administrator Role GA",
+                    "description": "Dedicated admin role for managing Copilot and AI services without requiring Global Admin permissions",
+                    "date": "2025-01-15",
+                    "releaseDate": "2025-01-15",
+                    "category": "Admin",
+                    "tags": [
+                        "Admin Role",
+                        "Governance",
+                        "RBAC"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-in-admins-2025",
+                    "title": "Copilot in Admin Centers GA",
+                    "description": "Copilot integration in M365, Teams, SharePoint admin centers for routine task optimization and PowerShell generation",
+                    "date": "2025-01-15",
+                    "releaseDate": "2025-01-15",
+                    "category": "Admin",
+                    "tags": [
+                        "Admin Center",
+                        "AI-assisted"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-agent-creation-2025",
+                    "title": "Agent Creation Permissions",
+                    "description": "Configurable permissions for who can create and publish AI agents in the organization",
+                    "date": "2025-06-01",
+                    "releaseDate": "2025-06-01",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Agents",
+                        "Permissions"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-temporary-chat-2025",
+                    "title": "Temporary Chat Mode",
+                    "description": "Interact with Copilot without saving conversation history — designed for confidential data handling",
+                    "date": "2025-11-01",
+                    "releaseDate": "2025-11-01",
+                    "category": "Privacy",
+                    "tags": [
+                        "Privacy",
+                        "Temporary",
+                        "Confidential"
+                    ],
+                    "impact": "medium"
+                }
+            ]
+        },
+        {
+            "id": "history-2024",
+            "title": "Released in 2024",
+            "icon": "📅",
+            "items": [
+                {
+                    "id": "r-licensing-gap-2024",
+                    "title": "300-User Licensing Minimum Removed",
+                    "description": "Copilot license available to businesses of all sizes, removing previous 300-user minimum requirement",
+                    "date": "2024-01-15",
+                    "releaseDate": "2024-01-15",
+                    "category": "Licensing",
+                    "tags": [
+                        "Licensing",
+                        "SMB"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-restricted-search-2024",
+                    "title": "Restricted SharePoint Search (Preview)",
+                    "description": "Admins can curate up to 100 allowed SharePoint sites for Copilot to reference, limiting AI data access",
+                    "date": "2024-03-01",
+                    "releaseDate": "2024-03-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "SharePoint",
+                        "Restricted Search",
+                        "Governance"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-graph-grounded-2024",
+                    "title": "Graph-Grounded Chat in Outlook",
+                    "description": "Copilot chat in Outlook can parse enterprise data through Microsoft Graph for contextual conversations",
+                    "date": "2024-04-01",
+                    "releaseDate": "2024-04-01",
+                    "category": "Exchange",
+                    "tags": [
+                        "Outlook",
+                        "Graph",
+                        "Grounding"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-local-file-2024",
+                    "title": "Local File Grounding",
+                    "description": "Ground Copilot chat in local files stored on user's system, extending AI context beyond cloud",
+                    "date": "2024-04-01",
+                    "releaseDate": "2024-04-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Local Files",
+                        "Grounding"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-mobile-2024",
+                    "title": "Copilot Mobile App",
+                    "description": "Web Copilot accessible via mobile app on iOS and Android with commercial data protection",
+                    "date": "2024-04-01",
+                    "releaseDate": "2024-04-01",
+                    "category": "User Access",
+                    "tags": [
+                        "Mobile",
+                        "iOS",
+                        "Android"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-notebook-2024",
+                    "title": "Notebook Interface",
+                    "description": "Scratchpad interface for refining longer, complex prompts with better formatting control",
+                    "date": "2024-04-01",
+                    "releaseDate": "2024-04-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Notebook",
+                        "Prompts"
+                    ],
+                    "impact": "low"
+                },
+                {
+                    "id": "r-16langs-2024",
+                    "title": "16 Additional Languages",
+                    "description": "Copilot expanded language support to 16 more languages for broader international coverage",
+                    "date": "2024-04-01",
+                    "releaseDate": "2024-04-01",
+                    "category": "User Access",
+                    "tags": [
+                        "Languages",
+                        "Localization"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-sp-content-2024",
+                    "title": "Copilot in SharePoint Content",
+                    "description": "Rewrite and enhance posts, adjust tone and length, create new content in SharePoint",
+                    "date": "2024-06-01",
+                    "releaseDate": "2024-06-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "SharePoint",
+                        "Content",
+                        "Writing"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-image-gen-2024",
+                    "title": "Image Generation in Word & PowerPoint",
+                    "description": "Generate custom images with DALL-E in Word and PowerPoint. Stock library search and slide design blending",
+                    "date": "2024-06-01",
+                    "releaseDate": "2024-06-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Images",
+                        "DALL-E",
+                        "Generation"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-viva-dashboard-2024",
+                    "title": "Copilot Dashboard (Viva Insights)",
+                    "description": "Six-month Copilot usage history dashboard for tenant-wide adoption visibility and measurement",
+                    "date": "2024-06-01",
+                    "releaseDate": "2024-06-01",
+                    "category": "Admin",
+                    "tags": [
+                        "Dashboard",
+                        "Analytics",
+                        "Viva"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-80k-summary-2024",
+                    "title": "Word 80,000 Word Summarization",
+                    "description": "Document summarization in Word increased to handle documents up to 80,000 words",
+                    "date": "2024-07-01",
+                    "releaseDate": "2024-07-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Word",
+                        "Summarization",
+                        "Capacity"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-pages-preview",
+                    "title": "Copilot Pages (Preview)",
+                    "description": "Dynamic, persistent canvas for multi-colleague AI collaboration — a new AI-native content surface",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Pages",
+                        "Collaboration",
+                        "Preview"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-excel-python-2024",
+                    "title": "Excel Python Integration",
+                    "description": "Copilot generates, explains, and inserts Python code in Excel for advanced analytics and data science",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Excel",
+                        "Python",
+                        "Analytics"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-copilot-agents-intro",
+                    "title": "Copilot Agents Introduction",
+                    "description": "First introduction of Copilot Agents concept — specialized AI with specific skills and knowledge",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Agents",
+                        "Introduction"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-scheduled-prompts-2024",
+                    "title": "Scheduled Prompts",
+                    "description": "Automate recurring prompts at specific times in Teams, Office.com/chat, and Outlook",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Automation",
+                        "Scheduled",
+                        "Prompts"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-onedrive-copilot-2024",
+                    "title": "Copilot in OneDrive",
+                    "description": "Ask questions about files, summarize documents, and search content without opening files in OneDrive",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "OneDrive",
+                        "Summarization",
+                        "Search"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-copilot-studio-2024",
+                    "title": "Copilot Studio Enhanced",
+                    "description": "Create custom Copilot experiences, integrate with Workday/SAP/ServiceNow, drag-and-drop interface",
+                    "date": "2024-09-01",
+                    "releaseDate": "2024-09-01",
+                    "category": "Agent Governance",
+                    "tags": [
+                        "Copilot Studio",
+                        "Custom",
+                        "Integration"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-sam-oversharing-2024",
+                    "title": "SharePoint Advanced Management for Copilot",
+                    "description": "Site Access Reviews, content governance, reduce oversharing and content sprawl for Copilot readiness",
+                    "date": "2024-11-01",
+                    "releaseDate": "2024-11-01",
+                    "category": "SharePoint",
+                    "tags": [
+                        "SAM",
+                        "Oversharing",
+                        "Governance"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-sensitivity-labels-2024",
+                    "title": "Sensitivity Labels for Copilot",
+                    "description": "Prevent Copilot from summarizing content from sensitive labeled documents in SharePoint/OneDrive",
+                    "date": "2024-11-01",
+                    "releaseDate": "2024-11-01",
+                    "category": "Purview",
+                    "tags": [
+                        "Labels",
+                        "Sensitivity",
+                        "Protection"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-copilot-control-2024",
+                    "title": "Copilot Control System",
+                    "description": "Comprehensive IT management framework with data protection, governance, access control, and visibility for agents",
+                    "date": "2024-11-01",
+                    "releaseDate": "2024-11-01",
+                    "category": "Admin",
+                    "tags": [
+                        "Control System",
+                        "Governance",
+                        "IT Management"
+                    ],
+                    "impact": "high"
+                },
+                {
+                    "id": "r-ai-admin-role-preview",
+                    "title": "AI Administrator Role (Preview)",
+                    "description": "Dedicated admin role for AI services management announced at Ignite 2024",
+                    "date": "2024-11-01",
+                    "releaseDate": "2024-11-01",
+                    "category": "Admin",
+                    "tags": [
+                        "Admin Role",
+                        "Preview",
+                        "RBAC"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-onenote-copilot-2024",
+                    "title": "Copilot in OneNote (Mac/iPad)",
+                    "description": "Contextual chat for summarizing, rewriting, and organizing notes in OneNote on Mac and iPad",
+                    "date": "2024-12-01",
+                    "releaseDate": "2024-12-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "OneNote",
+                        "Mac",
+                        "iPad"
+                    ],
+                    "impact": "low"
+                },
+                {
+                    "id": "r-excel-clean-2024",
+                    "title": "Excel Clean Data Feature",
+                    "description": "Copilot detects and fixes text inconsistencies, number format issues, and extra spaces in Excel data",
+                    "date": "2024-12-01",
+                    "releaseDate": "2024-12-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Excel",
+                        "Data Cleaning"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-teams-recap-2024",
+                    "title": "Teams Intelligent Meeting Recap",
+                    "description": "AI-generated summaries for impromptu calls and 'Meet now' meetings with action items",
+                    "date": "2024-12-01",
+                    "releaseDate": "2024-12-01",
+                    "category": "Teams",
+                    "tags": [
+                        "Teams",
+                        "Meetings",
+                        "Recap"
+                    ],
+                    "impact": "medium"
+                },
+                {
+                    "id": "r-edge-sidebar-2024",
+                    "title": "Edge Sidebar Copilot",
+                    "description": "Summarize webpages and PDFs, get contextual prompt suggestions from Edge browser sidebar",
+                    "date": "2024-11-01",
+                    "releaseDate": "2024-11-01",
+                    "category": "User Access",
+                    "tags": [
+                        "Edge",
+                        "Browser",
+                        "Sidebar"
+                    ],
+                    "impact": "low"
+                },
+                {
+                    "id": "r-prompt-gallery-2024",
+                    "title": "Copilot Prompt Gallery",
+                    "description": "Discover, save, and share prompts. Industry-specific prompt collections in Copilot Lab",
+                    "date": "2024-12-01",
+                    "releaseDate": "2024-12-01",
+                    "category": "Copilot Actions",
+                    "tags": [
+                        "Prompts",
+                        "Gallery",
+                        "Sharing"
+                    ],
+                    "impact": "low"
+                }
+            ]
+        }
+    ]
+}
